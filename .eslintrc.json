@@ -1,0 +1,159 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "no-new": "error",
+        "no-eval": "error",
+        "no-var": "error",
+        "no-proto": "error",
+        "no-shadow": "error",
+        "camelcase": "error",
+        "semi-spacing": "warn",
+        "block-spacing": "warn",
+        "comma-spacing": "warn",
+        "no-multi-str": "error",
+        "no-new-func": "error",
+        "prefer-const": "error",
+        "comma-dangle": "warn",
+        "no-lone-blocks": "error",
+        "no-extra-label": "error",
+        "no-implied-eval": "error",
+        "keyword-spacing": "warn",
+        "no-useless-call": "error",
+        "no-new-wrappers": "error",
+        "no-param-reassign": "error",
+        "no-useless-concat": "error",
+        "no-throw-literal": "error",
+        "no-useless-return": "error",
+        "space-before-blocks": "warn",
+        "no-extend-native": "error",
+        "no-duplicate-imports": "error",
+        "react/react-in-jsx-scope": "off",
+        "no-else-return": "error",
+        "no-trailing-spaces": "warn",
+        "no-constructor-return": "error",
+        "no-whitespace-before-property": "warn",
+        "no-unmodified-loop-condition": "error",
+        "curly": ["warn", "all"],
+        "semi": ["error", "never"],
+        "yoda": ["error", "always"],
+        "radix": ["error","always"],
+        "quotes": ["error", "double"],
+        "eol-last": ["error", "always"],
+        "arrow-parens": ["warn", "as-needed"],
+        "spaced-comment": ["error", "always", {
+            "markers": ["/"]
+        }],
+        "@typescript-eslint/type-annotation-spacing": [
+            "warn", 
+            {
+                "before": false,
+                "after": true,
+                "overrides": {
+                "arrow": {
+                    "before": true,
+                    "after": true
+                }
+                }
+            }
+        ],
+        "no-empty": [
+            "error",
+            { 
+                "allowEmptyCatch": true 
+            }
+        ],
+        "no-empty-function": ["error", {
+            "allow": [
+                "constructors"
+            ]
+        }],
+        "max-lines": ["error",{
+            "max": 400,
+            "skipComments": true
+        }],
+        "arrow-spacing": ["warn",  { 
+            "before": true, 
+            "after": true
+        }],
+        "func-style": ["warn", "declaration", {
+            "allowArrowFunctions": true
+        }],
+        "brace-style": ["error", "1tbs", {
+            "allowSingleLine": false
+        }],
+        "object-curly-spacing": [
+            "warn", 
+            "always",
+            { 
+                "objectsInObjects": false 
+            }
+        ],
+        "max-len": [
+            "warn", 
+            {
+                "code": 80,
+                "comments": 240,
+                "ignorePattern": "import(.*).then(.*)"
+            }
+         ],
+        "indent": [
+            "warn", 
+            4,
+            { 
+                "SwitchCase": 1 
+            }
+        ],
+        "no-irregular-whitespace": [
+            "warn", 
+            { 
+                "skipTemplates": true 
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "warn", 
+            { 
+                "max": 1, 
+                "maxBOF": 0, 
+                "maxEOF": 0 
+            }
+        ],
+        "space-before-function-paren": [
+            "warn", 
+            {
+                "named": "never",
+                "anonymous": "always",
+                "asyncArrow": "always"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true
+          }
+        }
+    }
+}
