@@ -1,3 +1,14 @@
+# $ Already pure environment
+> **Includes in project**
+
+> EsLint (8.26.0)
+
+> Prettier (2.7.1)
+
+> React 18 template TypeScript
+
+> Recommended [**plugins**](https://github.com/Sicdex/clean-env-react-eslint-vscode/blob/main/.vscode/extensions.json#L2) for Visual studio code
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
